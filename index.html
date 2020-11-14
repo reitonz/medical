@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>慶應義塾大学病院/模写サイト</title>
+</head>
+<body>
+    <header>
+        <div class="header-line"></div>
+        <div class="container row m-auto">
+            <div class="header-left col-4 ">
+                <nav>
+                    <ul>
+                        <li><a href="">ホーム</a></li>
+                        <li><a href="">お問い合わせ一覧</a></li>
+                        <li><a href="">アクセス</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <form action="">
+                        <input type="hidden" name="imgsize" value="0">
+                        <input type="text" placeholder="サイト内検索" >
+                        <input type="image" src="img/search_01.png">
+                    </form>
+
+                </div>
+            </div>
+            <div class="header-img col-4 m-auto text-center">
+                <a href="" class="logo-black"><img src="img/logo_01.png" alt=""></a>
+            </div>
+            <div class="header-right col-4 m-auto">
+                <nav>
+                    <ul>
+                        <li><a href="">サイトマップ</a></li>
+                        <li><a href="">ENGLISH</a></li>
+                        <li><a href="">採用情報</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <p class="font-text">文字<br>
+                        サイズ</p>
+                    <p id="font-big">拡大</p>
+                    <p id="font-normal">標準</p>
+                    <p class="font-text">背景変更</p>
+                    <p class="bg-black inline-block">黒</p>
+                    <p class="back-white none">白</p>
+                </div>
+            </div>
+        </div>
+
+
+        <input id="menu" type="checkbox">
+        <label for="menu" class="open"><i class="fas fa-bars"></i></label>
+
+        <div id="ham-menu">
+            <div id="header">
+                <p>メニュー</p>
+                <label for="menu" id="close">×</label>
+            </div>
+
+            <div id="main">
+                <input type="text" placeholder="サイト内検索">
+                <nav>
+                    <ul>
+                        <li><a href="">ホーム</a></li>
+                        <li><a href="">お問い合わせ一覧</a></li>
+                        <li><a href="">アクセス</a></li>
+                        <li><a href="">サイトマップ</a></li>
+                        <li><a href="">ENGLISH</a></li>
+                        <li><a href="">採用情報</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="header-nav" >
+            <nav class="container">
+                <ul>
+                    <li class="border-r">
+                        <div class="point border-right">来院・入院の方</div>
+                        <div id="nav-first">
+                            <div class="nav-boxes">
+                                <div class="nav-box">
+                                    <p>病院へ行く</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>初めて受診する方</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>通院中・再来の方</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>入院・面会の方</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>人間ドックを受診する方</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="nav-box">
+                                    <p>調べる</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>診療科・部門一覧</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>病名・医師名検索</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>役割・機能</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>健康・医療情報（KOMPAS）</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="nav-box">
+                                    <p>問い合わせる</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>地図・フロア図</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>院内施設のご案内</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>よくあるお問い合わせ</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>お問い合わせ一覧</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div><!-- nav-boxes -->
+
+                            <div class="boxes-bottom">
+                                <a href=""><i class="fas fa-chevron-circle-right"></i>来院・入院の方のトップ</a>
+                                <span id="back">×</span>
+                            </div>
+                        </div><!-- nav-first -->
+                    </li>
+                    <li>
+                        <div class="point">
+                            慶應義塾大学<br class="inner">病院について
+                        </div>
+                        <div id="nav-second">
+                            <div class="nav-boxes">
+                                <div class="nav-box">
+                                    <p>基本情報</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>病院概要</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>診療科・部門一覧</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>統計・実績データ</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>理念・行動指針</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="nav-box">
+                                    <p>取り組み</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>知ってほしい慶應義塾大学病院</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>病院紹介</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>病院広報誌「すゝめ」</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>ご寄付のお願い</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="nav-box">
+                                    <p>調べる</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>公開講座・社会連携講座</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>取材について</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>ボランティア募集</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>お問い合わせ一覧</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div><!-- nav-boxes -->
+
+                            <div class="boxes-bottom">
+                                <a href=""><i class="fas fa-chevron-circle-right"></i>慶應義塾大学病院についてのトップ</a>
+                                <span id="back2">×</span>
+                            </div>
+                        </div><!-- nav-second -->
+                    </li>
+                    <li class="border-l">
+                        <div class="point border-left">医療関係の方</div>
+                        <div id="nav-third">
+                            <div class="nav-boxes">
+                                <div class="nav-box">
+                                    <p>紹介する</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>患者さんの紹介について</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>診療科・部門一覧</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>病名・医師名検索</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>医療連携について</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="nav-box">
+                                    <p>学ぶ・働く</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>採用情報</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>研修医・専修医について</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>ボランティア募集</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>医学部・医学研究科別ウインドウで開きます。</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="nav-box">
+                                    <p>調べる</p>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>治験・臨床試験情報</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>統計・実績データ</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>よくあるお問い合わせ</a></li>
+                                            <li><a href="#"><i class="fas fa-chevron-circle-right"></i>お問い合わせ一覧</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div><!-- nav-boxes1 -->
+
+                            <div class="boxes-bottom">
+                                <a href=""><i class="fas fa-chevron-circle-right"></i>医療関係の方のトップ</a>
+                                <span id="back3">×</span>
+                            </div>
+                        </div><!-- nav-first -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+ <main>
+    <div class="images" id="slide-top">
+        <div class="slide active">
+            <img src="img/jp-mv_01_pc_20161011.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/jp-mv_05_pc_20161011-2.png" alt="">
+        </div>
+    </div>
+
+    <div id="schedule">
+        <div class="container">
+            <div class="box m-auto">
+                <div class="s-title col-2">
+                    <span>!</span>
+                    <p>大切なお知らせ</p>
+                </div>
+                <dl class="col-md-9">
+                    <dt>2020年08月28日</dt>
+                    <a href=""><dd>【9月26日（土）までにご予約がある患者さん対象】電話診療による処方箋発行について</dd></a>
+                    <dt>2020年08月21日</dt>
+                    <a href=""><dd>当院で安心して診療を受けていただくための取り組み</dd></a>
+                    <dt>2020年07月22日</dt>
+                    <a href=""><dd>病院正面玄関での検温実施と3号館入口の閉鎖について</dd></a>
+                    <dt>2020年07月07日</dt>
+                    <a href=""><dd>面会の禁止について（荷物の受け渡しについて更新）</dd></a>
+                    <dt>2020年07月06日</dt>
+                    <a href=""><dd>【診療情報】入院・外来診療について</dd></a>
+                    <dt>2020年07月03日</dt>
+                    <a href=""><dd>予約運用の変更について</dd></a>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div id="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 m-auto pb-3 info">
+                    <a href="">
+                        <h3>初めての受診する方</h3>
+                        <img src="img/img_purpose_01.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 m-auto pb-3 info">
+                    <a href="">
+                        <h3>通院・再来の方</h3>
+                        <img src="img/img_purpose_02.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 m-auto pb-3 info">
+                    <a href="">
+                        <h3>入院・面会の方</h3>
+                        <img src="img/img_purpose_03.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 m-auto pb-3 info">
+                    <a href="">
+                        <h3>人間ドック</h3>
+                        <img src="img/img_purpose_04.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <nav class="info-nav">
+            <ul class="m-auto col-md-10 p-0">
+                <li class="col-md-4 pt-3 pb-3"><a href=""><span><i class="fas fa-medkit"></i></span>診断料・部門一覧</a></li>
+                <li class="col-md-4 pt-3 pb-3"><a href=""><span><i class="fas fa-search"></i></span> 医師・病名検索</a></li>
+                <li class="col-md-4 pt-3 pb-3"><a href=""><span><i class="fas fa-map-marker-alt"></i></span>地図・フロア図</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="notice">
+        <div class="container pb-0">
+            <div class="row">
+                <section id="n1" class="col-md-4 py-3 active">
+                    <h4>病院からのお知らせ</h4>
+                </section>
+                <section id="n2" class="col-md-4 py-3">
+                    <h4>医療関係の方へのお知らせ</h4>
+                </section>
+                <section id="n3" class="col-md-4 py-3">
+                    <h4>採用情報</h4>
+                </section>
+            </div>
+        </div>
+        <div class="n1-text block">
+            <dl class="col-md-10 m-auto">
+                <div>
+                    <dt class="col-md-2">2020年08月27日</dt>
+                    <span class="col-mb-1">お知らせ</span>
+                    <a href="" ><dd class="col-md-12">2020年度インフルエンザワクチン接種のお知らせ</dd></a>
+                </div>
+                <div>
+                    <dt class="col-md-2">2020年08月18日</dt>
+                    <span class="col-mb-1">お知らせ</span>
+                    <a href=""><dd class="col-md-12">LINEによる外来の待合呼び出しサービスを開始しました</dd></a>
+                </div>
+                <div>
+                    <dt class="col-md-2">2020年08月06日</dt>
+                    <span class="col-mb-1">お知らせ</span>
+                    <a href=""><dd class="col-md-12">トラスツズマブ　エムタンシン静脈内投与療法が患者申出療養に承認されました</dd></a>
+                </div>
+                <div>
+                    <dt class="col-md-2">2020年08月01日</dt>
+                    <span class="col-mb-1">お知らせ</span>
+                    <a href=""><dd class="col-md-12">イマチニブ経口投与及びペムブロリズマブ静脈内投与の併用療法が先進医療Bに承認されました</dd></a>
+                </div>
+            </dl>
+
+            <div class="catalog">
+                <a href=""><p><i class="fas fa-chevron-circle-right"></i>病院からのお知らせ一覧</p></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="n2-text">
+            <dl class="col-md-10 m-auto">
+                <div>
+                    <dt class="col-md-2">2020年08月01日</dt>
+                    <span class="col-mb-1">お知らせ</span>
+                    <a href="" ><dd class="col-md-12">2020年度インフルエンザワクチン接種のお知らせ</dd></a>
+                </div>
+                <div>
+                    <dt class="col-md-2">2020年07月01日</dt>
+                    <span class="col-mb-1">お知らせ</span>
+                    <a href=""><dd class="col-md-12">LINEによる外来の待合呼び出しサービスを開始しました</dd></a>
+                </div>
+                <div>
+                    <dt class="col-md-2">2019年05月10日</dt>
+                    <span class="col-mb-1 event">イベント</span>
+                    <a href=""><dd class="col-md-12">トラスツズマブ　エムタンシン静脈内投与療法が患者申出療養に承認されました</dd></a>
+                </div>
+                <div>
+                    <dt class="col-md-2">2018年06月21日</dt>
+                    <span class="col-mb-1">お知らせ</span>
+                    <a href=""><dd class="col-md-12">イマチニブ経口投与及びペムブロリズマブ静脈内投与の併用療法が先進医療Bに承認されました</dd></a>
+                </div>
+            </dl>
+
+            <div class="catalog">
+                <a href=""><p><i class="fas fa-chevron-circle-right"></i>医療関係の方へのお知らせ一覧</p></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="n3-text">
+            <dl class="col-md-10 m-auto">
+                <div>
+                    <dt class="col-md-2">2017年06月28日</dt>
+                    <a href="" ><dd class="col-md-12">職員採用サイト更新しました別ウインドウで開きます。</dd></a>
+                </div>
+            </dl>
+            <div class="catalog">
+                <a href=""><p><i class="fas fa-chevron-circle-right"></i>採用情報一覧</p></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="container cont">
+            <div class="row">
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_07.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>情報公開について</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_08.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>臨床研究推進センター</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_09.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>慶應義塾大学 医学部・医学研究所</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_01.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>さまざまな連携による最適な医療実践</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_02.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>知ってほしい慶應義塾大学病院</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_03.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>新しい医療への取り組み</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_04.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>医療・健康情報（KONPAS）</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_05.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>新病院棟（1号館）について</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_06.jpg" alt="">
+                        <p><i class="fas fa-chevron-circle-right"></i>医療人の育成</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="notice2">
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__item__link js-menu__item__link" href="">病院からのお知らせ</a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <div class="n2-text">
+                            <dl class="col-md-10 m-auto">
+                                <div>
+                                    <dt class="col-md-2">2020年08月01日</dt>
+                                    <span class="col-mb-1">お知らせ</span>
+                                    <a href="" ><dd class="col-md-12">2020年度インフルエンザワクチン接種のお知らせ</dd></a>
+                                </div>
+                                <div>
+                                    <dt class="col-md-2">2020年07月01日</dt>
+                                    <span class="col-mb-1">お知らせ</span>
+                                    <a href=""><dd class="col-md-12">LINEによる外来の待合呼び出しサービスを開始しました</dd></a>
+                                </div>
+                                <div>
+                                    <dt class="col-md-2">2019年05月10日</dt>
+                                    <span class="col-mb-1 event">イベント</span>
+                                    <a href=""><dd class="col-md-12">トラスツズマブ　エムタンシン静脈内投与療法が患者申出療養に承認されました</dd></a>
+                                </div>
+                                <div>
+                                    <dt class="col-md-2">2018年06月21日</dt>
+                                    <span class="col-mb-1">お知らせ</span>
+                                    <a href=""><dd class="col-md-12">イマチニブ経口投与及びペムブロリズマブ静脈内投与の併用療法が先進医療Bに承認されました</dd></a>
+                                </div>
+                            </dl>
+
+                            <div class="catalog">
+                                <a href=""><p><i class="fas fa-chevron-circle-right"></i>医療関係の方へのお知らせ一覧</p></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item__link js-menu__item__link" href="">病院関係の肩へのお知らせ</a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <div class="n1-text block">
+                            <dl class="col-md-10 m-auto">
+                                <div>
+                                    <dt class="col-md-2">2020年08月27日</dt>
+                                    <span class="col-mb-1">お知らせ</span>
+                                    <a href="" ><dd class="col-md-12">2020年度インフルエンザワクチン接種のお知らせ</dd></a>
+                                </div>
+                                <div>
+                                    <dt class="col-md-2">2020年08月18日</dt>
+                                    <span class="col-mb-1">お知らせ</span>
+                                    <a href=""><dd class="col-md-12">LINEによる外来の待合呼び出しサービスを開始しました</dd></a>
+                                </div>
+                                <div>
+                                    <dt class="col-md-2">2020年08月06日</dt>
+                                    <span class="col-mb-1">お知らせ</span>
+                                    <a href=""><dd class="col-md-12">トラスツズマブ　エムタンシン静脈内投与療法が患者申出療養に承認されました</dd></a>
+                                </div>
+                                <div>
+                                    <dt class="col-md-2">2020年08月01日</dt>
+                                    <span class="col-mb-1">お知らせ</span>
+                                    <a href=""><dd class="col-md-12">イマチニブ経口投与及びペムブロリズマブ静脈内投与の併用療法が先進医療Bに承認されました</dd></a>
+                                </div>
+                            </dl>
+
+                            <div class="catalog">
+                                <a href=""><p><i class="fas fa-chevron-circle-right"></i>病院からのお知らせ一覧</p></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__item">
+                <a class="menu__item__link js-menu__item__link" href="">採用情報</a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <div class="n3-text">
+                            <dl class="col-md-10 m-auto">
+                                <div>
+                                    <dt class="col-md-2">2017年06月28日</dt>
+                                    <a href="" ><dd class="col-md-12">職員採用サイト更新しました別ウインドウで開きます。</dd></a>
+                                </div>
+                            </dl>
+                            <div class="catalog">
+                                <a href=""><p><i class="fas fa-chevron-circle-right"></i>採用情報一覧</p></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="container cont">
+            <div class="row">
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_07.jpg" alt="">
+                        <p>情報公開について</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_08.jpg" alt="">
+                        <p>臨床研究推進センター</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_09.jpg" alt="">
+                        <p>慶應義塾大学 医学部・医学研究所</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_01.jpg" alt="">
+                        <p>さまざまな連携による最適な医療実践</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_02.jpg" alt="">
+                        <p>知ってほしい慶應義塾大学病院</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_03.jpg" alt="">
+                        <p>新しい医療への取り組み</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_04.jpg" alt="">
+                        <p>医療・健康情報（KONPAS）</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_05.jpg" alt="">
+                        <p>新病院棟（1号館）について</p>
+                    </a>
+                </div>
+                <div class="m-auto text-center">
+                    <a href="">
+                        <img src="img/img_feature_06.jpg" alt="">
+                        <p>医療人の育成</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto">
+                    <ul>
+                        <li>
+                            <p class="col-4 p-0"><i class="fas fa-phone"></i>住所・電話</p>
+                            <p class="col-8">〒160-8582 東京都新宿区信濃町35 <br class="dot">
+                                03-3353-1211（代表）</p>
+                        </li>
+                            <hr>
+                        <li>
+                            <p class="col-4 p-0"><i class="far fa-clock"></i>診療受付</p>
+                            <p class="col-8">午前8時40分～午前11時00分</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <p class="col-4 p-0"><i class="far fa-clock"></i>正面玄関開錠</p>
+                            <p class="col-8">診療日：午前6時45分～午後7時15分 <br>
+                                休診日：午後1時00分～午後7時15分 <br>
+                                （指定の時間以外は出入口を閉鎖）</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <p class="col-4 p-0"><i class="far fa-calendar-alt"></i>休診日</p>
+                            <p class="col-8">日曜日・第1・3土曜日 <br>
+                                国民の祝日・休日 <br>
+                                年末年始（12/30～1/4） <br>
+                                慶應義塾の休日（1/10）</p>
+                        </li>
+                        <div class="button col-12 my-3">
+                            <a href="" class=""><i class="fas fa-chevron-circle-right"></i>予約について</a>
+                            <a href="" class=""><i class="fas fa-chevron-circle-right"></i>予約変更・確認</a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 map">
+                    <img src="img/top_map.png" alt="">
+                    <div class="map-text">
+                        <a href="">
+                            <i class="fas fa-chevron-circle-right"></i><br>
+                            アクセスについて
+                        </a>
+                        <div class="ml-5">
+                            <a href=""><p><i class="fas fa-chevron-circle-right"></i>フロアマップ</p></a>
+                            <a href=""><p><i class="fas fa-chevron-circle-right"></i>院内施設一覧</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a href="" class="reservation"><p><i class="fas fa-chevron-circle-right"></i>予約について</p></a>
+                    <a href="" class="reservation-change"><p><i class="fas fa-chevron-circle-right"></i>予約変更・確認</p></a>
+                    <a href="" class="accece"><p><i class="fas fa-chevron-circle-right"></i>アクセスについて</p></a>
+                    <a href="" class="floor"><p><i class="fas fa-chevron-circle-right"></i>フロアマップ</p></a>
+                    <a href="" class="floor"><p><i class="fas fa-chevron-circle-right"></i>院内施設一覧</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-nav">
+        <div class="nav-width">
+            <ul class="slider">
+                <li><a href=""><img src="img/bnr_footer_01.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_02.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_04.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_05.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_06.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_07.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_08.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_09.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_10.png" alt=""></a></li>
+                <li><a href=""><img src="img/bnr_footer_11.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+ </main>
+
+ <footer>
+    <nav class="col-7">
+        <ul>
+            <li><a href="">このサイトについて</a></li>
+            <li><a href="">プライバシーポリシー</a></li>
+            <li><a href="">お問い合わせ一覧</a></li>
+            <li><a href="">ご寄付のお願い</a></li>
+        </ul>
+    </nav>
+    <nav class="second">
+        <ul>
+            <div>
+                <li><a href="">このサイトについて</a></li>
+                <li><a href="">お問い合わせ一覧</a></li>
+            </div>
+            <div>
+                <li><a href="">プライバシーポリシー</a></li>
+                <li><a href="">ご寄付のお願い</a></li>
+            </div>
+        </ul>
+    </nav>
+    <p class="footerCopy col-5 text-center">Copyright (C） Keio University All Rights Reserved.</p>
+ </footer>
+
+
+
+ <script  type="text/javascript" src="slick.min.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
